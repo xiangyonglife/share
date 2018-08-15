@@ -16,6 +16,8 @@ Including another URLconf
 from blog import views
 from django.urls import path
 
+app_name = 'blog'  # 那个项目下的app
 urlpatterns = [
-    path('', views.index),
+    path('', views.index, name='index'),
+    path('article-detail', views.article, name='articleDetail'),
 ]

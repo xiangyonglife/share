@@ -2,6 +2,13 @@ from django.shortcuts import render
 
 
 # Create your views here.
+def layout(request):
+    return render(request, 'layout.html')
+
+
 def index(request):
-    print("11111")
     return render(request, 'index.html')
+
+
+def article(request):
+    return render(request, 'article_detail.html')
